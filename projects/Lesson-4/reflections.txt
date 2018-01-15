@@ -5,5 +5,37 @@ You've learned a lot about web development so far. I want you to take a moment t
   * How have you used the problem solving strategies from the first project to overcome challenges so far?
 
 ---
+NEW SKILLS
 
-Your response goes here!
+I'm re-familiarizing myself with semantic HTML tagging, which is something that I want to believe will have a significant impact on the usability of content on the web someday (even if it currently is merely a religious attempt to return sanity to what is otherwise an insane playground for the mecha-warriors of advertising).
+
+WHAT'S BEEN EASY
+
+Google searches like "MDN figure element" get to a decent overview and comparison of alternatives pretty quickly.
+
+I seem to be one of the only folks in my cohort who's tried using the <figure> tag - which at least seems meaningful (if redundant to the <img> tag).
+
+WHAT'S BEEN DIFFICULT
+
+Finding good resources that spell out immediate, specific value for the semantic tags available in HTML 5 is a chore, which tells me we're too early to make an impact with them yet.  It's more like something that when I run into a UX team who are zealous about semantic tagging, I'll be prepared to keep up with their energy (even if I'm skeptical that it's anything more than an alternative and potentially-havoc-wreaking means of assigning CSS properties to your text content).
+
+PROBLEM SOLVING STRATEGIES
+
+I had nearly all these research approaches already nailed before I came to this training - MDN is widely-known, edit-then-reload is the only way to do front-end development, and making small changes and frequent inspections is something I've learned the hard way (as every new developer should).
+
+INSIGHTS
+
+I've been fascinated by the well-meaning and non-canonical debate around the use of semantic HTML tags such as
+* <header>
+* <footer>
+* <section>
+* <article>
+
+Here are my conclusions so far:
+* <article> is best suited to wrap a publishable artifact - in traditional parlance, a "page", but also a Comment, a Tweet, a Reply or anything else that is a discrete monologue by a single speaker
+* <header> sounded like a great way to delineate the preamble before the "meat" of an article, but it seems to be more attuned to the "page"-level construct of the "chrome" surrounding an actual article - logo, nav bars, ads - all the shit you want Safari to hide in Reading mode
+* <footer> too sounded a lot like "footnote", but it's more like the complement to <header> such as copyright notice, all those links to the rest of the site you almost never want to see cluttering the nav bars (like "investor relations" and "corporate history" screeds), so the next-best option available for those rare occasions when you have a footnote (I guess this is Wikipedia territory?) is to use the <aside> tag
+* <section> is an ambiguous, potentially-meaningful tag once the web at large settles on a specific usage model for it - at this point it's more potential than impact, and is a good habit to get into but isn't anything in particular better than <div> with some class- and/or id attributes for styling
+
+At least this one set of opinions felt convincing:
+https://discussions.udacity.com/t/the-header-and-footer-tags/514232
